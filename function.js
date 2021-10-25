@@ -46,3 +46,13 @@ employees = [
 // Managers List
 managers = employees.filter((employee) => employee.category === "gerente");
 console.log(managers);
+// Lesser ID Recover
+let employee = employees.reduce(
+  (previous, current) => {
+    return current.id < previous.id ? current : previous;
+  },
+  {
+    id: 999999999999999,
+  }
+);
+console.log(employee);
