@@ -56,3 +56,9 @@ let employee = employees.reduce(
   }
 );
 console.log(employee);
+// Upper Case Catch
+employeeUpperCase = employees.map((employee) => {
+  employee.name = employee.name.toUpperCase();
+  return employee;
+});
+console.log(employeeUpperCase);
